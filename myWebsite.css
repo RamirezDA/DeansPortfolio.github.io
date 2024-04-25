@@ -1,0 +1,337 @@
+.parentBox {
+    display: flex;
+}
+/* --------------------------------------------------------------------------------- */
+.infoBar {
+    display: flex;/* justify-content: flex-start; */
+    flex-direction: column;
+    border: 1%;
+    border-color: pink;
+    background-color: blue;
+    color: black;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 20%; /* padding: 10px; */
+    background-image: url('images/DreamShaper_v7_Make_a_background_of_a_web_page_that_is_colored_0.jpg'); /*Set the image as the background */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: bottom; /* Center the background image */
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.infoBar img {
+    width: 75%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20%; /* Add some space above the headshot */
+    margin-bottom: 20%;
+    border-radius: 50%; /* Apply border-radius to make it circular */
+    border: 1.5px solid silver;
+}
+
+.infoBar caption {
+    text-decoration: underline;
+}
+
+.infoBar td {  /*remember that the we can use .infoBar td because the td is in the infoBar, this way we are manipulating only the tds' in the infoBar*/
+    width: 75%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20%;
+    border: solid;
+    padding: 5%;
+    text-align: center;
+    font-size: 75%;
+    background-color:rgba(191, 191, 220, 0.883);
+    /* word-wrap: break-word; */
+}
+.infoBar td:hover {
+    background-color: lightgray; /* Change the background color on hover */
+    color: black; /* Change the text color on hover */
+    cursor: pointer; /* Change the cursor to indicate interactivity */
+}
+
+td i.fa-brands.fa-linkedin {
+    color: blue;
+    font-size: 100%;
+}
+
+/* ------------------------------------------------------------------------------- */
+.infoBoxes {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-image: url('images/dreamBackground.jpg'); /*Set the image as the background */
+    /* max-height: 80vh; Set a maximum height <--This will make the cards shorter and wont fill the page correctly*/
+    overflow: auto; /* Make content scrollable if it exceeds the height <-- This makes it so that the cards dont overflow into the infoBar*/
+}
+
+.infoBoxes button {
+    /* Add your button styling here */
+    /* background-color: orange; Example color */
+    /* color: black; Example text color */
+    /* Add any other styles you want to apply to the buttons */
+}
+
+#header {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#bio {
+    border: 1px solid;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: indigo;
+    background-image: url('images/dreamBackground.jpg'); /*Set the image as the background */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    height: 100px; /* Set initial height */
+    overflow: hidden; /* Hide overflow content */
+    color:white;
+}
+#bio.expanded {
+    height: 50vh; /* Set height to half of the viewport height when expanded */
+    overflow: auto;
+    text-align: center;
+}
+.bioTitle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.bioText {
+    text-align: center;
+    font-size: large;
+    color: black;
+}
+
+#card1 {
+    border: 1px solid;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: url('images/camo.png'); /* Set the image as the background */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    height: 100px; /* Set initial height */
+    overflow: hidden; /* Hide overflow content */
+    color:white;
+}
+#card1.expanded {
+    height: 100vh; /* Set height to half of the viewport height when expanded */
+    overflow: auto;
+}
+#card1 img {
+    float: right;
+    width: 500px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space below the images */
+}
+#card1 .image-text {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+    font-size: large;
+}
+.card-title1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#card2 {
+    border: 1px solid;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: url('images/markus-spiske-iar-afB0QQw-unsplash.jpg'); /* Set the image as the background */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    height: 100px; /* Set initial height */
+    overflow: hidden; /* Hide overflow content */
+    color:white;
+}
+#card2.expanded {
+    height: 100vh; /* Set height to half of the viewport height when expanded */
+    overflow: auto;
+}
+#card2 img {
+    float: right;
+    width: 500px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space below the images */
+}
+#card2 .image-text {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+    font-size: large;
+}
+.card-title2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#card3 {
+    border: 1px solid;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: url('images/nasaLogo.jpg'); /* Set the image as the background */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    height: 100px; /* Set initial height */
+    overflow: hidden; /* Hide overflow content */
+    color:white;   
+}
+#card3.expanded {
+    height: 100vh; /* Set height to half of the viewport height when expanded */
+    overflow: auto;
+}
+#card3 img {
+    float: right;
+    width: 500px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space below the images */
+}
+#card3 .image-text {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+    font-size: large;
+}
+.card-title3 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#card4 {
+    border: 1px solid;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: url('images/bookSigning.jpg'); /* Set the image as the background */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    height: 100px; /* Set initial height */
+    overflow: hidden; /* Hide overflow content */
+    color:white;
+}
+#card4.expanded {
+    height: 100vh; /* Set height to half of the viewport height when expanded */
+    overflow: auto;
+}
+#card4 img {
+    float: right;
+    width: 500px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space below the images */
+}
+#card4 .image-text {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+    font-size: large;
+}
+.card-title4 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#card5 {
+    border: 1px solid;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: url('images/dataBaseLogo.jpg'); /* Set the image as the background */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    height: 100px; /* Set initial height */
+    overflow: hidden; /* Hide overflow content */
+    color:white;
+}
+#card5.expanded {
+    height: 100vh; /* Set height to half of the viewport height when expanded */
+    overflow: auto;
+}
+#card5 img {
+    float: right;
+    width: 500px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space below the images */
+}
+#card5 .image-text {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+    font-size: large;
+}
+.card-title5 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#card6 {
+    border: 1px solid;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: url('images/architecture1.jpg');
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    height: 100px; /* Set initial height */
+    overflow: hidden; /* Hide overflow content */
+    color:white;
+}
+#card6.expanded {
+    height: 100vh; /* Set height to half of the viewport height when expanded */
+    overflow: auto;
+}
+#card6 img {
+    float: right;
+    width: 500px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space below the images */
+}
+#card6 .image-text {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+    font-size: large;
+}
+.card-title6 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#card7 {
+    border: 1px solid;
+    flex-grow: 1;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-image: url('images/bloodStripe.jpg'); /* Set the image as the background */
+    background-size: cover; /* Cover the entire element with the background image */
+    background-position: center; /* Center the background image */
+    height: 100px; /* Set initial height */
+    overflow: hidden; /* Hide overflow content */
+    color:white;
+}
+#card7.expanded {
+    height: 100vh; /* Set height to half of the viewport height when expanded */
+    overflow: auto;
+}
+#card7 img {
+    float: right;
+    width: 500px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space below the images */
+}
+#card7 .image-text {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+    font-size: large;
+}
+.card-title7 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
